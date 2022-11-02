@@ -7,9 +7,8 @@
 <body>
 <script>
     let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 51, 10, 12, 16, 32, 15, 17];
-
-    function deleteNumberFromArray(arr) {
-        let a = +prompt('Nhập vào số nguyên vị trí index')
+    let a = +prompt('Nhập vào số nguyên vị trí index')
+    function deleteNumberFromArray(arr,a) {
         if (a < 0 || a > arr.length) {
             return arr;
         } else {
@@ -18,7 +17,7 @@
         }
     }
 
-    deleteNumberFromArray(array);
+    deleteNumberFromArray(array,a);
     console.log(array);
 </script>
 </body>
